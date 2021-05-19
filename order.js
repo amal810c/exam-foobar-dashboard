@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", init);
 let url = "https://teamellewoods.herokuapp.com/";
 
 async function init() {
-  setTimeout(refreshDashboard /* 1000 */);
+  setTimeout(refreshDashboard, 1000);
 }
 
 async function refreshDashboard() {
@@ -18,7 +18,7 @@ async function refreshDashboard() {
     document.querySelector("#serving_list").appendChild(element);
   });
 
-  /* setTimeout(refreshDashboard, 1000); */
+  setTimeout(refreshDashboard, 1000);
 }
 
 function getCustomerElement(customer) {
