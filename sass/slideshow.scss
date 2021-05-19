@@ -1,0 +1,45 @@
+@import "colors_and_fonts";
+
+#right {
+  h2 {
+    font-family: $heading;
+    padding: 20px;
+    font-size: 2em;
+    @media screen and (min-width: 600px) {
+      font-size: 2.5em;
+    }
+  }
+
+  #slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    h3 {
+      font-family: $heading;
+      font-size: 1.5em;
+      @media screen and (min-width: 600px) {
+        font-size: 2em;
+      }
+    }
+
+    img {
+      width: 60%;
+      border-radius: 50%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      @media screen and (min-width: 600px) {
+        width: 50%;
+      }
+    }
+
+    p {
+      font-family: $paragraph;
+      font-size: 1em;
+      @media screen and (min-width: 600px) {
+        font-size: 1.5em;
+      }
+    }
+  }
+}

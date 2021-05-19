@@ -1,0 +1,67 @@
+@import "colors_and_fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: $lightbrown;
+}
+
+#dashboard {
+  @media screen and (min-width: 600px) {
+    display: flex;
+  }
+
+  #left {
+    flex-grow: 1;
+    flex-basis: 50%;
+
+    #order-list,
+    #beer-level {
+      flex-grow: 1;
+      flex-basis: 50%;
+      height: 50%;
+    }
+
+    hr {
+      margin: 30px 0;
+      height: 1px;
+      border: none;
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, $darkbrown));
+    }
+  }
+  #right {
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-align: center;
+
+    hr {
+      margin: 30px 0;
+      height: 1px;
+      border: none;
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, $darkbrown));
+      @media screen and (min-width: 600px) {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .v-line {
+    visibility: hidden;
+    @media screen and (min-width: 600px) {
+      visibility: visible;
+      border-left: 6px solid green;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -3px;
+    }
+  }
+}
