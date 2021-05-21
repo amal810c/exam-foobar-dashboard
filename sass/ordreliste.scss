@@ -1,15 +1,6 @@
 @import "colors_and_fonts";
 
 #order-list {
-  h1 {
-    font-family: $heading;
-    font-size: 2em;
-    padding: 20px;
-    @media screen and (min-width: 1000px) {
-      font-size: 2.5em;
-    }
-  }
-
   ul {
     padding: 20px;
 

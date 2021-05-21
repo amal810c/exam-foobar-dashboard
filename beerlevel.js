@@ -19,7 +19,7 @@ async function init() {
 }
 
 async function fetchBeer(tapId) {
-  let svgObject = await fetch("/beerglass1_beerglass.svg");
+  let svgObject = await fetch("/beerglass.svg");
   let svg = await svgObject.text();
   document.querySelector("#beeranimation_0 .beerpic").innerHTML = svg;
   document.querySelector("#beeranimation_1 .beerpic").innerHTML = svg;
@@ -69,8 +69,8 @@ async function refreshDashboard() {
   //update taps
   data.taps.forEach((tap) => {
     const element = document.querySelector("#tap_" + tap.id);
-    //    element.querySelector("#bartender_").id = "bartender_" + i;
-    /* element.querySelector(".id").textContent = tap.id; */
+    /*   element.querySelector("#bartender_").id = "bartender_" + i; */
+    /*     element.querySelector(".id").textContent = tap.id; */
     element.querySelector(".level").textContent = tap.level;
 
     let level = (tap.level / 2500) * 100;
@@ -86,7 +86,7 @@ async function refreshDashboard() {
     }
 
     beer.setAttribute("height", beerHeight);
-    beer.setAttribute("y", 89.7 + beerY);
+    beer.setAttribute("y", 100 + beerY);
 
     element.querySelector(".capacity").textContent = tap.capacity;
   });
