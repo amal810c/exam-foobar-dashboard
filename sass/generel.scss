@@ -35,9 +35,9 @@ body {
     #beer-level {
       flex-grow: 1;
       flex-basis: 50%;
-      @media screen and (min-width: 600px) {
+      /*   @media screen and (min-width: 600px) {
         height: 50vh;
-      }
+      } */
     }
 
     hr {
@@ -67,8 +67,8 @@ body {
     visibility: hidden;
     @media screen and (min-width: 600px) {
       visibility: visible;
-      border-left: 6px solid green;
-      height: 100%;
+      border-left: 6px solid $darkbrown;
+      height: 110%;
       position: absolute;
       left: 50%;
       top: 0;
