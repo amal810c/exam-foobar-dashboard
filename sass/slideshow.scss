@@ -11,11 +11,32 @@
     }
   }
 
-  #slideshow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  #myslider {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (min-width: 600px) {
+      width: 612px;
+      height: 612px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1000px) {
+      margin-top: 100px;
+    }
+    @media screen and (min-width: 1500px) {
+      transform: scale(1.2);
+    }
+
+    #slider_content {
+      width: 400px;
+      height: 400px;
+      @media screen and (min-width: 600px) {
+        width: 612px;
+        height: 612px;
+      }
+    }
 
     h3 {
       font-family: $heading;

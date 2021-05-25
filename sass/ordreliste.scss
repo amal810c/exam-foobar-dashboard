@@ -2,13 +2,13 @@
 
 #order-list {
   ul {
-    padding: 20px;
+    padding-left: 40px;
 
     .order {
       background-color: $darkbrown;
       color: $white;
-      width: 100px;
-      height: 100px;
+      width: 125px;
+      height: 125px;
       border-radius: 50%;
       font-family: $paragraph;
       display: inline-flex;
@@ -19,8 +19,8 @@
       flex-direction: column;
       box-shadow: 0px 8px 15px rgb(0 0 0/40%);
       @media screen and (min-width: 1000px) {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         font-size: 2em;
       }
     }

@@ -30,6 +30,9 @@ body {
   #left {
     flex-grow: 1;
     flex-basis: 50%;
+    @media screen and (min-width: 600px) {
+      border-right: 6px solid #916c5d;
+    }
 
     #order-list,
     #beer-level {
@@ -60,19 +63,6 @@ body {
       @media screen and (min-width: 600px) {
         visibility: hidden;
       }
-    }
-  }
-
-  .v-line {
-    visibility: hidden;
-    @media screen and (min-width: 600px) {
-      visibility: visible;
-      border-left: 6px solid $darkbrown;
-      height: 110%;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      margin-left: -3px;
     }
   }
 }
