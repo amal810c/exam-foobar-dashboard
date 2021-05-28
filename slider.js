@@ -17,11 +17,7 @@ function carousel() {
 }
  */
 
-/* simpleslider.getSlider(); */
-
 simpleslider.getSlider({
   container: document.getElementById("myslider"),
+  delay: 5,
 });
-/* 
-document.querySelector("#myslider").style.width = "400px";
-document.querySelector("#myslider").style.height = "400px"; */
