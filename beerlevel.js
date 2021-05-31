@@ -19,7 +19,7 @@ async function init() {
 }
 
 async function fetchBeer(tapId) {
-  let svgObject = await fetch("public/images/beerglass.svg");
+  let svgObject = await fetch("./images/beerglass.svg");
   let svg = await svgObject.text();
   document.querySelector("#beeranimation_0 .beerpic").innerHTML = svg;
   document.querySelector("#beeranimation_1 .beerpic").innerHTML = svg;
