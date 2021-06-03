@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", init);
 
 let url = "https://teamellewoods.herokuapp.com/";
 let json;
-/* let selected;
-let places;
-let area;
-let fillcolor; */
+/* 8; */
 
 async function init() {
   console.log("hallo");
@@ -28,21 +25,6 @@ async function fetchBeer(tapId) {
   document.querySelector("#beeranimation_4 .beerpic").innerHTML = svg;
   document.querySelector("#beeranimation_5 .beerpic").innerHTML = svg;
   document.querySelector("#beeranimation_6 .beerpic").innerHTML = svg;
-  /* 
-  let level = (300 / 2500) * 100;
-  console.log(level);
-  let beerHeight = (850 / 100) * level;
-  let beerY = 850 - beerHeight;
-
-  console.log(beerHeight);
-  if (level <= 15) {
-    document.querySelector("#beer rect").setAttribute("fill", "red");
-  } else {
-    document.querySelector("#beer rect").setAttribute("fill", "#F8B123");
-  }
-
-  document.querySelector("#beer rect").setAttribute("height", beerHeight);
-  document.querySelector("#beer rect").setAttribute("y", 89.7 + beerY); */
 }
 
 function buildDashboard(info) {
@@ -62,15 +44,12 @@ function buildDashboard(info) {
 }
 
 async function refreshDashboard() {
-  // const data = JSON.parse(bar.getData(true));
   const respons = await fetch(url);
   const data = await respons.json();
 
   //update taps
   data.taps.forEach((tap) => {
     const element = document.querySelector("#tap_" + tap.id);
-    /*   element.querySelector("#bartender_").id = "bartender_" + i; */
-    /*     element.querySelector(".id").textContent = tap.id; */
     element.querySelector(".level").textContent = tap.level;
 
     let level = (tap.level / 2500) * 100;
