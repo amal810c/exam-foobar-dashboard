@@ -14,6 +14,7 @@ async function refreshDashboard() {
   //update being severd
   document.querySelector("#serving_list").innerHTML = "";
   data.serving.forEach((customer) => {
+    console.log(customer.order);
     const element = getCustomerElement(customer);
     document.querySelector("#serving_list").appendChild(element);
   });
